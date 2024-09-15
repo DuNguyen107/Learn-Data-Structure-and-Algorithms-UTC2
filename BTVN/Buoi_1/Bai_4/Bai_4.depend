@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1725021358 source:d:\cau_truc_du_lieu_va_giai_thua\btvn\bai_4\main.cpp
+	<iostream>
+	<string>
+	<bits/stdc++.h>
+

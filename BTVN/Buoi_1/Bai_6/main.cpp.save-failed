@@ -1,0 +1,41 @@
+/*###Begin banned keyword - each of the following line if appear in code will raise error. regex supported
+define
+include
+###End banned keyword*/
+
+
+#include <iostream>
+using namespace std;
+
+
+
+//###INSERT CODE HERE
+
+void inputArray(int a[], int &numbers){
+    while(true){
+        int n; cin >> n;
+        if(n == -1)
+            break;
+        if(n >= 0){
+            a[numbers] = n;
+            numbers++;
+        }
+    }
+}
+
+void outputArray(int a[], int n){
+    for(int i=0; i<n; i++){
+        cout << a[i] << " ";
+    }
+    cout << endl;
+}
+
+int main()
+{
+    int a[1000];
+    int numbers = 0;
+    inputArray(a, numbers);
+    cout << "Before:";
+    outputArray(a, numbers);
+}
+
